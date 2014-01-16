@@ -19,7 +19,7 @@ class TweetsController < ApplicationController
 
   def index
     @tweet = Tweet.new
-    @Tweets = Tweet.order('created_at ASC')
+    @tweets = Tweet.order('created_at DESC')
   end
 
   private
