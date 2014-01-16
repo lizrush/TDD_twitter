@@ -3,16 +3,10 @@ require 'spec_helper'
 describe TweetsController do
 
   describe "get index" do
-    let!(:tweet) {create(:tweet)}
 
     it "is successful" do
       get :index
       expect(response).to be_successful
-    end
-
-    it "assigns @tweets" do
-      get :index
-      expect(assigns(:tweet).first).to be_an_instance_of Tweet
     end
   end
 
